@@ -1,0 +1,52 @@
+{
+  "best_model": "Linear SVM",
+  "evaluation": {
+    "holdout_method": "StratifiedGroupKFold single fold",
+    "cv_method": "5-fold StratifiedGroupKFold",
+    "group_key": "raw message",
+    "random_state": 42,
+    "train_samples": 4459,
+    "test_samples": 1115,
+    "test_group_overlap": 0
+  },
+  "models": {
+    "Multinomial Naive Bayes": {
+      "cv_accuracy": 0.9695,
+      "cv_precision": 1.0,
+      "cv_recall": 0.7722,
+      "cv_f1_score": 0.8709,
+      "cv_f1_std": 0.0246
+    },
+    "Logistic Regression": {
+      "cv_accuracy": 0.9652,
+      "cv_precision": 0.9979,
+      "cv_recall": 0.7421,
+      "cv_f1_score": 0.8505,
+      "cv_f1_std": 0.0251
+    },
+    "Linear SVM": {
+      "cv_accuracy": 0.9841,
+      "cv_precision": 0.9599,
+      "cv_recall": 0.9195,
+      "cv_f1_score": 0.9392,
+      "cv_f1_std": 0.0181
+    },
+    "Random Forest": {
+      "cv_accuracy": 0.9731,
+      "cv_precision": 0.9919,
+      "cv_recall": 0.8057,
+      "cv_f1_score": 0.889,
+      "cv_f1_std": 0.0078
+    }
+  },
+  "test_metrics": {
+    "accuracy": 0.991,
+    "precision": 0.973,
+    "recall": 0.96,
+    "f1_score": 0.9664,
+    "roc_auc": 0.9945
+  },
+  "total_samples": 5574,
+  "spam_count": 747,
+  "ham_count": 4827
+}
